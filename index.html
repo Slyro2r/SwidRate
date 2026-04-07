@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Galerie des notes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Ajouter une image</h1>
+
+    <input id="titleInput" type="text" placeholder="Titre" />
+
+    <div id="dropZone" class="drop-zone">
+      Glisse une image ici ou clique
+      <input id="imageInput" type="file" accept="image/*" hidden />
+    </div>
+
+    <button onclick="addImage()">Ajouter</button>
+
+    <h2>Galerie</h2>
+    <div id="gallery" class="gallery"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
